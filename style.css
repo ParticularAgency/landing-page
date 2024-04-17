@@ -4,6 +4,7 @@ body {
   margin: 0 auto;
   margin-top: 200px;
   padding: 20px;
+  font-family: "Urbanist", sans-serif;
 }
 
 a {
@@ -44,6 +45,7 @@ section {
 
 .box h3 {
   font-size: 40px;
+  font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   line-height: 40px;
   letter-spacing: 0.01em;
