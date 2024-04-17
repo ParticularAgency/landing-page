@@ -125,3 +125,9 @@ section {
   text-align: center;
   visibility: visible;
 }
+
+@media screen and (max-width: 480px) {
+  section {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  }
+}
