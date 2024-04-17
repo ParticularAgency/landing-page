@@ -1,8 +1,8 @@
 body {
-  background-color: #0A0A0A;
+  background-color: #0a0a0a;
   max-width: 1300px;
   margin: 0 auto;
-  margin-top: 200px;
+  margin-top: 50px;
   padding: 20px;
   font-family: "Urbanist", sans-serif;
 }
@@ -34,14 +34,13 @@ section {
 }
 
 .box p {
-    font-size: 8px;
-    font-weight: 400;
-    line-height: 12px;
-    letter-spacing: 0.15em;
-    color: #fff;
-    text-transform: uppercase;
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0.15em;
+  color: #fff;
+  text-transform: uppercase;
 }
-
 
 .box h3 {
   font-size: 40px;
@@ -49,9 +48,8 @@ section {
   font-weight: 400;
   line-height: 40px;
   letter-spacing: 0.01em;
-  margin: unset
+  margin: unset;
 }
-
 
 .box:hover .content {
   display: block;
@@ -63,41 +61,41 @@ section {
 
 .content p {
   text-transform: unset;
-  color: #E2DEDE;
+  color: #e2dede;
   font-size: 14px;
   font-weight: 300;
   line-height: 21px;
 }
 
 .agency {
-  background: #000000C7 url('images/agency.png');
+  background: #000000c7 url("images/agency.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
 
 .agency h3 {
-  color: #0165FA;
+  color: #0165fa;
 }
 
 .network {
-  background: #000000C7 url('images/network.png');
+  background: #000000c7 url("images/network.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
 
 .network h3 {
-  color: #AE8651;
+  color: #ae8651;
 }
 
 .media {
-  background: #000000C7 url('images/media.png');
+  background: #000000c7 url("images/media.png");
   background-repeat: no-repeat;
   background-size: cover;
-  
+
   background-position: center center;
-  
+
   position: relative;
   transition: background-color 0.3s ease;
 }
@@ -106,22 +104,21 @@ section {
   background-blend-mode: multiply;
 }
 .media h3 {
-  color: #6E00FE;
+  color: #6e00fe;
 }
-
 
 .media:hover::after {
   content: "COMING SOON";
   position: absolute;
   top: 50%;
   left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 40px;
-      font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    line-height: 40px;
-    letter-spacing: 0.01em;
-  color: #6E00FE;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0.01em;
+  color: #6e00fe;
   text-align: center;
   visibility: visible;
 }
