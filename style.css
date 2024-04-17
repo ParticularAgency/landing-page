@@ -17,6 +17,7 @@ section {
 }
 
 .box {
+  position: relative;
   height: 424px;
   padding: 16px;
   background-color: #ccc;
@@ -24,6 +25,11 @@ section {
   flex-direction: column;
   transition: background-color 0.3s ease;
   cursor: pointer;
+}
+
+.text {
+  position: absolute;
+  bottom: 16px;
 }
 
 .box p {
