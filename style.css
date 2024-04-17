@@ -1,50 +1,118 @@
+body {
+  background-color: #0A0A0A;
+  max-width: 1300px;
+  margin: 0 auto;
+  margin-top: 200px;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(424px, 1fr));
+  margin-top: 2rem;
+}
+
 .box {
-  width: 200px;
-  height: 200px;
+  height: 424px;
+  padding: 16px;
   background-color: #ccc;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
   transition: background-color 0.3s ease;
+  cursor: pointer;
 }
 
-.box:hover {
-  background-color: #f0f0f0;
+.box p {
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0.15em;
+    color: #fff;
+    text-transform: uppercase;
 }
 
-.box:hover h3 + .content {
+
+.box h3 {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0.01em;
+  margin: unset
+}
+
+
+.box:hover .content {
   display: block;
 }
 
 .content {
   display: none;
-  text-align: center;
-  margin-top: 10px;
+}
+
+.content p {
+  text-transform: unset;
+  color: #E2DEDE;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21px;
+}
+
+.agency {
+  background: #000000C7 url('images/agency.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.agency h3 {
+  color: #0165FA;
+}
+
+.network {
+  background: #000000C7 url('images/network.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.network h3 {
+  color: #AE8651;
 }
 
 .media {
+  background: #000000C7 url('images/media.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  background-position: center center;
+  
   position: relative;
-  width: 200px;
-  height: 200px;
-  background-color: #ccc;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   transition: background-color 0.3s ease;
 }
 
-.media:hover {
-  background-color: #f0f0f0;
+.box:hover {
+  background-blend-mode: multiply;
+}
+.media h3 {
+  color: #6E00FE;
 }
 
+
 .media:hover::after {
-  content: "Coming Soon";
+  content: "COMING SOON";
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 16px;
-  color: #333;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0.01em;
+  color: #6E00FE;
   text-align: center;
   visibility: visible;
 }
