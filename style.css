@@ -4,7 +4,7 @@ body {
   margin: 0 auto;
   margin-top: 50px;
   padding: 20px;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Helvetica Neue", sans-serif;
 }
 
 a {
@@ -24,7 +24,7 @@ section {
   background-color: #ccc;
   display: flex;
   flex-direction: column;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
   cursor: pointer;
 }
 
@@ -34,7 +34,7 @@ section {
 }
 
 .box p {
-  font-size: 8px;
+  font-size: 10px;
   font-weight: 400;
   line-height: 12px;
   letter-spacing: 0.15em;
@@ -51,12 +51,16 @@ section {
   margin: unset;
 }
 
-.box:hover .content {
-  display: block;
+.content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease, max-height 0.3s ease;
 }
 
-.content {
-  display: none;
+.box:hover .content {
+  opacity: 1;
+  max-height: 200px;
 }
 
 .content p {
